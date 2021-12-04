@@ -1,0 +1,15 @@
+Cайт step by step
+
+1. Создать папку проекта в которой: папки srs, dist.
+2. В папке srs: index.html, папки: css, fonts, icons, img, js, sass, другие...
+3. Установка GIT 
+3. Создаем структуру в index.html
+   - в head: <link rel="stylesheet" href="css/style.min.css">
+   - <header
+   - <nav
+   - <section
+   - <form
+   - ....
+   - <footer
+   - в конце body: <script src="js/script.js"></script>
+4. 

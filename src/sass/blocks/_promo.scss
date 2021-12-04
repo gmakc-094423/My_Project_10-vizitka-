@@ -1,0 +1,52 @@
+.promo {
+  min-height: 650px;
+  padding: 21px 0 93px 0;
+  background: url(../img/bg1.png) center (center/cover) no-repeat;
+  
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 90px;
+  }
+
+  &__header {
+    font: 700 42px/1 Museo;
+    color: $text_color;
+    text-transform: uppercase;
+  }
+  &__subheader {
+    font: 500 24px/1 Museo;
+    color: $text_color;
+    text-transform: uppercase;
+  }
+  &__icons {
+    margin: 66px 0;
+    width: 424px;
+    height: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  &__icon {
+    width: 108px;
+    font: 300 12px/14px Museo;
+    color: $text_color;
+    text-align: center;
+    img {
+      height: 45px;
+      display: block;
+      margin: 0 auto 18px auto;
+    }
+  }
+  &__link {
+    margin-top: 18px;
+    font: 500 16px/1 Museo;
+    color: $text_color;
+    a {
+    text-transform: uppercase; 
+    color: $text_color;
+    }
+  }
+
+}

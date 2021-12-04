@@ -1,0 +1,30 @@
+.button {
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: $main_color;
+  font: 500 12px/1 Museo;
+  text-transform: uppercase;
+  color: $text_color;
+  transition: 0.3s all;
+  &:hover {
+    box-shadow: 0 0 10px 10px #d14646;
+  }
+  &_main {
+    width: 300px;
+    height: 50px;
+    font-size: 16px;
+  }
+  &_submit {
+    width: 100%;
+    height: 55px;
+    font-size: 16px;
+  }
+  &_mini {
+    width: 130px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+}
