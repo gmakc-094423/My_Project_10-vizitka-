@@ -1,10 +1,14 @@
 Cайт step by step
 
 1. Создать папку проекта в которой: папки srs, dist.
-2. В папке srs: index.html, папки: css, fonts, icons, img, js, sass, другие...
-3. Установка GIT 
+2. В папке srs: index.html, папки: sass(style.scss), css, fonts, icons, img, js,  другие...
+   - в папке sass: style.scss, папки: base, blocks, libs
+3. Установка GIT
+   - git init,  git add .,  git commit 
 4. Создаем структуру в index.html
-   - в head: <link rel="stylesheet" href="css/style.min.css">
+   - в head: 
+      - можно сбросить стили - normalise.css (<link - ссылка)
+      - <link rel="stylesheet" href="css/style.min.css">
    - <header
    - <nav
    - <section
@@ -12,4 +16,16 @@ Cайт step by step
    - ....
    - <footer
    - в конце body: <script src="js/script.js"></script>
-5. git init,  git add .,  git commit 
+5. Устанавливаем шрифты:
+   в папку fonts - сами шрифты
+   в файл _font.scss - @font-face {  
+      - дописываем пути ../fonts/(файл шрифта)
+   в файл style.scss - @import "libs/font";
+      - устанавливаем дефолтный шрифт (* {  font-family:'название', sans-serif;}
+6. Верстаем сайт от размера смартфона к широкоэеранному. 
+   от 360px (отступы  10px, высота 640) 
+   В _media.scss создаем размерные величины:
+      @media (min-width: 768px) { (отступы  15px, высота 1024)
+      @media(min-width: 1024px) { (отступы  20px, высота 768)
+      @media(min-width: 1366px) {} , высота 768
+      @media(min-width: 1920px) {} , высота 1080

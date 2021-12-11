@@ -1,0 +1,15 @@
+.top {
+  min-height: 400px;
+  // background-color: $main_color;
+  background: linear-gradient(180deg, #424240 0%, #9F9BCE 100%);
+  text-align: center;
+  &__image {
+    padding-top: 50px;
+    img {
+      text-align: center;
+      width: 30%;
+      max-width: 200px;
+      border-radius: 50%;
+    }
+  }
+}

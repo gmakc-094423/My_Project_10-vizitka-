@@ -1,0 +1,465 @@
+/***********************************
+Common Styles (Общие стили)
+*************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+body {
+    background-color: #f0f4f6;
+    color:#411900;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-rendering: optimizeLegibility;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+[class*="col-"] {
+    float: left;
+    padding: 3%;
+}
+section {
+    padding: 100px 0;
+    clear: both;
+}
+h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 6px; 
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #020b0fb4;
+    content: " ";
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+}
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 6px; 
+    text-align: center;
+    font-size: 80%;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.float_clearing {
+    zoom: 1;
+}
+.float_clearing:after {
+    zoom: 1;
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+section p,
+#contact_form {
+    font-size: 85%;
+}
+/***********************************
+Header Styles (Заголовочные стили)
+*************************************/
+
+
+  header {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.459), rgba(148, 110, 7, 0.267)), url(../images/header_background.jpg);
+      height: 100vh;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+  }
+  header h1 {
+      margin: 0;
+  }
+
+  .header_text {
+      padding-top: 150px;
+      color: #f0f4f6;
+  }
+
+  #header_title {
+      margin-left: 8.33%;
+      /* background: #f0f4f6; */
+      max-width: 55%;
+      padding: 15px;
+      text-transform: uppercase;
+      font-size: 3vw;
+      line-height: 4.0vw;
+  }
+  #header_headline {
+      margin-top: 20px;
+      margin-left: 8.33%;
+      /* background: #f0f4f6; */
+      padding: 15px;
+      max-width: 35%;
+  }
+  #header_buttons {
+    margin-top: 20px;
+    margin-left: 8.33%;
+    padding: 15px;
+    max-width: 35%;
+}
+
+  #logo_image {
+      height: 65px;
+      width: auto;
+      float: left;
+
+  }
+  #logo_text {
+      float: left;
+      margin-left: 20px;
+  }
+  #logo_text a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#411900;
+    font-size: 1.8vw;
+    letter-spacing: 7px;
+  }
+  #main_nav {
+      float: right;
+      list-style: none;
+  }
+  #main_nav li {
+      display: inline-block;
+      margin-right: 30px;
+      font-size: 0.8em;
+    }
+  #main_nav li a:link,
+  #main_nav li a:visited {
+      text-decoration: none;
+      text-transform: uppercase;
+      color:#411900;
+      opacity: 0.7;
+      transition: opacity 0.5s, color 0.5s;
+    }
+    #main_nav li a:hover,
+    #main_nav li a:active {
+        opacity: 1;
+        color: #f0f4f6;
+    }
+nav {
+    background: #f0f4f6b4;
+    height: 60px;
+    padding: 22px;
+}
+
+/***********************************
+Buttons Styles (Кнопочные стили)
+*************************************/
+#header_buttons {
+    margin-top: 20px;
+    margin-left: 8.33%;
+    padding: 15px;
+}
+.button:link,
+.button:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #f0f4f6b4;
+    border-radius: 150px;
+    transition: background-color 0.4s;
+}
+.button_order:link,
+.button_order:visited,
+input[type=submit] {
+    background-color: #41190096;
+    border: 1px solid thistle ;
+}
+.button_more:link,
+.button_more:visited {
+    background-color: #4119002a;
+    border: 1px solid thistle ;
+}
+.button:hover,
+.button:active,
+input[type=submit]:hover, 
+input[type=submit]:active {
+    background: #1f0c00b2;
+}
+.button_order:hover,
+.button_order:active {
+     border: 1px solid #1f0c00b2 ;
+}
+.button_more:hover,
+.button_more:active {
+    border: 1px solid #1f0c00b2 ;
+}
+/***********************************
+Features Styles (Cтили секции особенности)
+*************************************/
+#headline-text {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 100%;
+}
+.features-icon {
+    font-size: 300%;
+    color: #1f0c00b2;
+    margin-bottom: 20px;
+}
+
+/***********************************
+Images Styles (Cтили секции картинок)
+*************************************/
+.images_container {
+    list-style: none;
+    width: 100%;
+}
+.images_container li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+.food-image {
+    width: 100%;
+    overflow: hidden;
+    background: black;
+}
+.food-image img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.2);
+    transition: transform 0.5s, opacity 0.5s;
+}
+.food-image img:hover {
+    transform: scale(1.05);
+    opacity: 1;
+} 
+
+/***********************************
+Order section Styles (Cтили секции заказов)
+*************************************/
+#phone_image {
+    width: 80%;
+}
+#phone_image_container {
+    margin-left: 5%;
+    margin-right: 3%;
+}
+.order_step {
+    margin-top: 40px;
+}
+.order_step div {
+    color:#41190096;
+    border: 1px solid #41190096 ;
+    border-radius: 150px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 6px;
+    font-size: 150%;
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+}
+.order_step p {
+    padding-top: 5px;
+}
+.app-button img {
+    height: 50px;
+    margin-right: 10px;
+}
+.order_step:last-of-type {
+    margin-bottom: 50px;
+} 
+.order_step:first-of-type {
+    margin-top: 20px;
+}
+
+/***********************************
+Adress section Styles (Cтили секции адресов)
+*************************************/
+#sities_section {
+    background-color: #dfdfdf;
+}
+#sities_section img {
+    width: 100%;
+}
+.city-info {
+    font-weight: 300;
+/*     letter-spacing: 1px;
+    word-spacing: 3px; */ 
+    font-size: 80%;
+}
+.info_icon {
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    color: #41190096;
+}
+
+/***********************************
+Background Styles (Cтили секции отзывов)
+*************************************/
+#feedback_section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.459), rgba(148, 110, 7, 0.267)), url(../images/09.jpg);
+    background-size: cover;
+ /*    height: 100vh; */
+    background-position: center;
+    color: #ffff;
+    background-attachment: fixed;
+}
+blockquote {
+    font-style: italic;
+    font-weight: 300;
+    line-height: 150%;
+}
+cite {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+}
+cite img {
+    display: inline-block;
+    width: 200px;
+    border: 2px solid #41190096 ;
+    border-radius: 150px;
+}
+blockquote div:before {
+    content: "\201c";
+    font-size: 200%;
+}
+blockquote:after {
+    content: "\201d";
+    font-size: 200%;
+    line-height: 150%;
+}
+
+/***********************************
+Contact form Styles (Cтили секции контактной формы)
+*************************************/
+#contact_form_section {
+    margin: 0 auto;
+    width: 50%;
+}
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #1f0c00b2;
+}
+textarea {
+    height: 150px;
+}
+
+/***********************************
+Footer Styles (Cтиль подножия)
+*************************************/
+footer {
+    text-align: center;
+    padding: 100px 0;
+    background-image: linear-gradient( #f0f4f6,#411900);    
+}
+
+#footer_social_links {
+    list-style: none;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+#footer_social_links li {
+    display: inline-block;
+    margin-right: 30px;
+    font-size: 0.8em;
+}
+#footer_nav {
+    margin-bottom: 20px;
+}
+ 
+#footer_nav li a:link,
+#footer_nav li a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#411900;
+    opacity: 0.7;
+    transition: opacity 0.5s, color 0.5s;
+    font-size: 70%;
+}
+#footer_nav li a:hover,
+#footer_nav li a:active {
+    opacity: 1;
+    color: #f0f4f6;
+}
+
+#footer_social_links li a:link,
+#footer_social_links li a:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#411900;
+    opacity: 0.7;
+    transition: opacity 0.5s, color 0.5s;
+    font-size: 150%;
+}
+#footer_social_links li a:hover,
+#footer_social_links li a:active {
+    opacity: 1;
+    color: #f0f4f6;
+}
+footer p {
+    font-size: 70%;
+}
+
+/***********************************
+MediaQuery Styles (Cтиль для мобильников)
+*************************************/
+@media only screen and (max-width: 1228px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+    .button_order {
+        margin-bottom: 20px;
+    }
+    #contact_form_section {
+        margin: 0 auto;
+        width: 80%;
+    }
+/*     #main_nav li {
+        color: #92f0b9;
+      } */
+    #main_nav li a:link,
+    #main_nav li a:visited {
+
+      color:#ffffff;
+
+    }
+  }

@@ -1,0 +1,49 @@
+.portfolio {
+  height: min-content;
+  min-height: 400px;
+  background: linear-gradient(180deg, #13dbc4 0%, #041843 100%);
+  margin-top: 0;
+  padding-top: 0.83em;
+  text-align: center;
+
+  &__content {
+    &-color_1, &-color_2, &-color_3 {
+      color: $text_color;
+    }
+
+    &-text {
+      & p {
+        text-align: justify;
+        font: 400 14pt Roboto;
+      }
+    }
+
+    &_table {
+      list-style: none;
+      padding-left: 0;
+      width: 80%;
+      max-width: 500px;
+      display: inline-block;
+    }
+  }
+
+  &__link {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 500px;
+    text-decoration: none;
+    overflow: hidden;
+    border: 8px double rgb(160, 4, 4);
+
+    img {
+      display: block;
+      width: 100%;
+      transition: .7s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

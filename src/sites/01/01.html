@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="The Best of the shcool (для поисковых систем)">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>MyTestSite</title>
+	<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+	<link rel="stylesheet" type="text/css" href="styles/ionicons.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/animate.css">
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet"> 
+
+<!-- иконки в заголовке -->
+
+	<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+	<link rel="manifest" href="icons/site.webmanifest">
+	<link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#00aba9">
+	<meta name="theme-color" content="#ffffff">
+
+	<script>
+		function digitalClock() {
+		 var date = new Date();
+		 var hours = date.getHours();
+		 var minutes = date.getMinutes();
+		 var seconds = date.getSeconds();
+				//* добавление ведущих нулей */
+			 if (hours < 10) hours = "0" + hours;
+			 if (minutes < 10) minutes = "0" + minutes;
+			 if (seconds < 10) seconds = "0" + seconds;
+				 document.getElementById("id_clock").innerHTML = hours + ":" + minutes + ":" + seconds;
+				 setTimeout("digitalClock()", 1000);
+		}
+	 </script>
+
+
+</head>
+<body>
+	<header id="header_header">
+		<nav>		
+		<img src="images/loopa.jpg" alt="Логотип" id="logo_image">
+			<h5 id="logo_text"><a href="#header_header">My test сайт</a></h5>
+<!-- 			<div class="float-clearing"></div> -->
+
+			<ul id="main_nav">
+				<li><a href="#header_header">Главная</a></li>	
+				<li><a href="#how_in_add">Добавить контент</a></li>		
+				<!-- <li><a href="#contact-form-section">О нас</a></li> -->  <!-- начальный вариант -->
+				<li><a href="html/about.html">О нас</a></li>
+				<li><a href="#cities-section">Наши филиалы</a></li>	
+				<li><a href="#footer_nav">Контакты</a></li>	
+			</ul>
+			<a class="hamburger_menu"><i class="icon ion-ios-menu"></i></a> <!-- Добавляем позже гамбургер-иеню -->
+		</nav>
+<!-- Вставляем дату -->
+
+<div id="id_clock"></div>
+<script>digitalClock();</script>
+
+
+
+		<div class="header_text">
+			<h1 id="header_title">Кто есть Who? </h1>
+			<div id="header_subtitle">
+				<a href="#" class="button button_events anim4">События</a>
+				<a href="#" class="button button_facts">факты</a>
+				<a href="#" class="button button_peoples">Пиплы</a>
+
+			</div>
+		</div>
+	</header>
+
+<section id="Anal_description">
+	<div>
+		<h2>Аналитика</h2>
+		<p id="headline_text">«Миром правит не тайная ложа, а явная лажа»</p>
+
+	</div>
+
+	<div class="col-3 anim1">
+		<i class="icon ion-ios-globe features-icon"></i>
+		<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+	</div>
+	<div class="col-3 anim1">
+		<i class="icon ion-ios-bookmarks features-icon"></i>
+		<p> В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. </p>
+	</div>
+		<div class="col-3 anim1">
+		<i class="icon ion-ios-people features-icon"></i>
+		<p> Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+	</div>
+		<div class="col-3 anim1">
+		<i class="icon ion-ios-code features-icon"></i>	
+		<p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации.</p>
+	</div>
+</section>
+
+<section id="anal_images">
+	<h4></h4>
+	<ul class="images_container">
+		<li>
+			<figure class="image_figure">
+				<img src="images/001.jpg"  alt="Картинка">
+			</figure>
+		 </li>
+		 <li>
+			<figure class="image_figure">
+				<img src="images/002.jpg"  alt="Картинка">
+			</figure>
+		 </li>
+		 <li>
+			<figure class="image_figure">
+				<img src="images/003.jpg" alt="Картинка">
+			</figure>
+		 </li>
+		 <li>
+			<figure class="image_figure">
+				<img src="images/004.jpg" alt="Картинка">
+			</figure>
+		 </li>
+	</ul>
+<ul class="images_container">
+		<li>
+			<figure class="image_figure">
+				<img src="images/005.jpg" alt="Картинка">
+			</figure>
+		 </li>
+		 <li>
+			<figure class="image_figure">
+				<img src="images/006.jpg" alt="Картинка">
+			</figure>
+		 </li>
+		 <li>
+			<figure class="image_figure">
+				<img src="images/007.jpg" alt="Картинка">
+			</figure>
+		 </li>
+		 <li>
+			<figure class="image_figure">
+				<img src="images/008.jpg" alt="Картинка">
+			</figure>
+		 </li>
+	</ul>
+<ul class="images_container">
+		<li>
+			<figure class="image_figure">
+				<img src="images/009.jpg" alt="Картинка">
+			</figure>
+		 </li>
+		 <li>
+			<figure class="image_figure">
+				<img src="images/010.jpg" alt="Картинка">
+			</figure>
+		 </li>
+		 <li>
+			<figure class="image_figure">
+				<img src="images/011.jpg" alt="Картинка">
+			</figure>
+		 </li>
+		 <li>
+			<figure class="image_figure">
+				<img src="images/012.jpg" alt="Картинка">
+			</figure>
+		 </li>
+	</ul>
+</section>
+
+<section id="cities-section">
+	 <h2>Наши представительства</h2>
+	 <div class="float-clearing">
+	 	<div class="col-3 anim2">
+	 		<img src="images/city03(SPB).jpg" alt="Картинка">
+	 	<h3>Санкт-Петербург</h3>
+	 	<div class="city_info">
+	 		<i class="icon ion-ios-home info-icon"></i>
+	 		Богатырский пр-кт, 25/5
+	 	</div>
+	 	<div class= "city_info">
+	 		<i class="icon ion-ios-call info-icon"></i>
+	 		+7-812-123-45-67
+	 	</div>
+	 	<div class="city_info">
+	 		<i class="icon ion-ios-mail info-icon"></i>
+	 		SPB@ProbaSite.ru
+	 	</div>	 	
+	 	</div>
+	 <div>
+	 	<div class="col-3 anim2">
+	 		<img src="images/city04(EKB).jpg" alt="Картинка">
+	 	<h3>Екатеринбург</h3>
+	 	<div class="city_info">
+	 		<i class="icon ion-ios-home info-icon"></i>
+	 		Пехотинцев, 3
+	 	</div>
+	 	<div class="city_info">
+	 		<i class="icon ion-ios-call info-icon"></i>
+	 		+7-4317-123-45-67
+	 	</div>
+	 	<div class="city_info">
+	 		<i class="icon ion-ios-mail info-icon"></i>
+	 		EKB@ProbaSite.ru
+	 	</div>	
+	 	</div>
+	 </div>
+	 <div>
+	 	<div class="col-3 anim2">
+	 		<img src="images/city01(Vladimir).jpg" alt="Картинка">
+	 	<h3>Владимир</h3>
+	 	<div class="city_info">
+	 		<i class="icon ion-ios-home info-icon"></i>
+	 		Сумская, 45
+	 	</div>
+	 	<div class="city_info">
+	 		<i class="icon ion-ios-call info-icon"></i>
+	 		+7-234-123-45-67
+	 	</div>
+	 	<div class="city_info">
+	 		<i class="icon ion-ios-mail info-icon"></i>
+	 		VLD@ProbaSite.ru
+	 	</div>	
+	 	</div>
+	 </div>
+	 <div>
+	 	<div class="col-3 anim2">
+	 		<img src="images/city02(V.Novgorod).jpg" alt="Картинка">
+	 	<h3>Великий Новгород</h3>
+	 	<div class="city_info">
+	 		<i class="icon ion-ios-home info-icon"></i>
+	 		Владимирская, 3
+	 	</div>
+	 	<div class="city_info">
+	 		<i class="icon ion-ios-call info-icon"></i>
+	 		+7-113-123-45-67
+	 	</div>
+	 	<div class="city_info">
+	 		<i class="icon ion-ios-mail info-icon"></i>
+	 		VNGD@ProbaSite.ru
+	 	</div>		 		
+	 	</div>
+	 </div>
+	 </div>
+</section>
+
+<section id="how_in_add">
+	<div>
+		<h2>Как добавить контент</h2>
+		<div class="col-4 anim3" id="phone_image_container">
+			<img src="images/hand-button.jpg" alt="Картинка" id="phone_image">
+		</div>
+		<div class="col-4">
+			<div class="order_step">
+				<div>1</div>
+				<p>
+					Выбери понравившуюся картинку
+				</p>
+			</div>
+						<div class="order_step">
+				<div>2</div>
+				<p>
+					Пришли мне статью
+				</p>
+			</div>
+						<div class="order_step">
+				<div>3</div>
+				<p>
+					Через неделю увидишь свою "новость" на сайте
+				</p>
+			</div>
+			<a href="#" class="app_button"><img src="images/googlplay.png" alt="Картинка"> </a>
+			<a href="#" class="app_button"><img src="images/appstre.jpg" alt="Картинка"> </a>
+		</div>
+
+	</div>
+</section>
+
+<section id="feedback_section">
+		<h2>Лучшие коменты наших гостей</h2>
+	<div class="float-clearing">
+		<div class="col-3">
+			<blockquote>
+				<cite>
+					<img src="images/faces01.jpg" alt="Картинка">
+				</cite>					
+					<div> А мне прокатило. Я давно так не ржал.</div>
+			</blockquote>
+		</div>
+		<div class="col-3">
+			<blockquote>
+				<cite>
+					<img src="images/faces02.jpg" alt="Картинка">
+				</cite>					
+					<div>Да что это за сайт такой. Нихрена не понятно. </div> 
+			</blockquote>
+		</div>
+		<div class="col-3">
+			<blockquote>
+				<cite>
+					<img src="images/faces03.jpg" alt="Картинка">
+				</cite>					
+					<div>Мне не понралилось. Аффтар слабо жжот. Аналитика похожа на анал.  </div> 
+			</blockquote>
+		</div>
+		<div class="col-3">
+			<blockquote>
+				<cite>
+					<img src="images/faces04.jpg" alt="Картинка">
+				</cite>					
+					<div>А мне вобще всё параллельно, Я ящер.</div> 
+			</blockquote>
+		</div>
+	</div>
+</section>
+
+<section id="contact-form-section">
+	<h2>Мы рады будем ответить на Ваши вопросы</h2>
+	<div id="contact-form">
+		<div class="form-row float-clearing">
+			<div class="col-6">
+				<label for="name">Имя</label>
+			</div>
+			<div class="col-6">
+				<input type="text" name="name" id="name" placeholder="Введите имя">
+			</div>
+		</div>
+
+		<div class="form-row float-clearing">
+			<div class="col-6">
+				<label for="email">E-mail</label>
+			</div>
+			<div class="col-6">
+				<input type="email" name="email" id="email" placeholder="Введите ваш E-mail">
+			</div>
+		</div>
+
+		<div class="form-row float-clearing">
+			<div class="col-6">
+				<label for="topic">Выбрать тему</label>
+			</div>
+			<div class="col-6">
+				<select id="topic" name="topic">
+					<option value="feedback">Комент</option>
+					<option value="question">Вопрос</option>
+					<option value="other">Другое</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="form-row float-clearing">
+			<div class="col-6">
+				<label for="news">Хочу получать новости</label>
+			</div>
+			<div class="col-6">
+				<input type="checkbox" name="news" id="news" checked> Да, конечно!
+			</div>
+		</div>
+
+		<div class="form-row float-clearing">
+			<div class="col-6">
+				<label for="text">Введите текст обращения</label>
+			</div>
+			<div class="col-6">
+				<textarea name="text" id="text" placeholder="Напишите свои мысли здесь"></textarea>
+			</div>
+		</div>
+
+		<div class="form-row float-clearing">
+			<div class="col-6">
+				<input type="submit" value="Отправить">
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<footer>
+	<div id="footer_nav">
+		<ul >
+				<li><a href="#header_header">Главная</a></li>	
+				<li><a href="#how_in_add">Добавить контент</a></li>		
+				<li><a href="#contact-form-section">О нас</a></li>
+				<li><a href="#cities-section">Наши филиалы</a></li>	
+				<li><a href="#footer_nav">Контакты</a></li>	
+		</ul>
+	</div>
+	<div id="footer_socseti">
+		<ul >
+			<li><a href="#"><i class="icon ion-logo-facebook features-icon"></i></a></li>	
+			<li><a href="#"><i class="icon ion-logo-twitter features-icon"></i></a></li>		
+			<li><a href="#"><i class="icon ion-logo-vk features-icon"></i></a></li>
+			<li><a href="#"><i class="icon ion-logo-instagram features-icon"></i></a></li>	
+			<li><a href="#"><i class="icon ion-logo-youtube features-icon"></i></a></li>	
+		</ul>
+	</div>
+	<div id="footer_text">
+		<p>Свободное распространение &copy;</p>
+		<p>Возрастное ограничение 18+</p>
+	</div>
+
+</footer>
+
+<script src="JQuery/jquery-3.5.1.min.js"></script>
+<script src="JQuery/jquery.waypoints.min.js"></script>
+<script src="JQuery/myjquery.js"></script>
+
+
+
+</body>
+</html>
