@@ -1,18 +1,121 @@
+@media (max-width: 767px) {
+  .portfolio__content {
+    color: $text_color;
+    }
+}
+
+@media (min-width: 699px) {
+  .portfolio__content_table {
+    margin-left: 3%;
+  }
+} 
+
 @media (min-width: 768px) { 
 
+  .portfolio__content {
+    color: black;
+    &-color_1, &-color_2, &-color_3 {
+      color: $text_color;
+    }
+  }
 }
 
 @media(min-width: 1024px) { 
 
+  header {
+    position: fixed;
+    left: 0;
+    top: 0; 
+    height: 100vh;
+  }
+
+  .top {
+    width: $left-indent;
+    padding-bottom: 0;
+    height: 350px;
+    padding: 0 15px;
+    & h1 {
+      font-size: 1.5em;
+    }
+    & h2 {
+      font-size: 1em;
+    }
+  }
+  .nav-bar {
+    display: none;
+  }
+  nav {
+    width: $left-indent; 
+    padding: 15px 0;
+    height: 100%;
+    a {
+      font: 14pt Roboto;
+      list-style-type: none;
+    }
+  }
+  .nav-menu {
+    display: block;
+    // width: 250px;
+    margin: auto;
+    
+  }
+  .topmenu {
+    background-color:rgba(255, 255, 255, 0) ;
+    & li {
+      margin-top: 25px 0;
+    }
+  }
+
+  .portfolio, .resume, .contacts {
+    width: calc(100vw - $left-indent);
+    margin-left: $left-indent;
+  }
+
+  .portfolio {
+    padding-bottom: 50px;
+    &__content {
+      display: flex;
+    }
+  }
+
+
+
+
 }
 
 @media(min-width: 1366px) {
-
+// ????
 }
 
 @media(min-width: 1920px) {
 
 }
+
+
+// уточнить!!!
+// @media screen and (orientation: landscape) {
+//   body {
+//     background-color: #EE4266; /* Красный фон */
+//   }
+//   .portfolio {
+//     background-color: rgb(155, 53, 53);
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // @media (max-width: 1200px){
@@ -228,12 +331,4 @@
 // 			}
 // 		}
 // 	}
-// }					
-
-
-			
-			
-			
-
-
-
+// }

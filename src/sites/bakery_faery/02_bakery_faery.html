@@ -2,6 +2,7 @@
 <html lang="ru">
 
 <head>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Лучшая пекарня в Екатеринбурге! (Учебный сайт)">
@@ -25,6 +26,10 @@
 </head>
 
 <body>
+
+      <!-- Вставка кнопки назад -->
+  <button id="history-button">Назад</button>
+
     <header id="header">
         <nav>
             <img src="images/logo_img.png" alt="Logo of bakery" id="logo_image">
@@ -343,6 +348,13 @@
     <script src="scripts/jquery.waypoints.min.js"></script>
     <script src="scripts/jquery.js"></script>
     <script src="scripts/sliderscript.js"></script>
+
+    <!-- Вставка кнопки назад -->
+    <script>
+        document.getElementById('history-button').addEventListener('click', () => {
+        history.back();
+        });
+    </script>
 
 
 

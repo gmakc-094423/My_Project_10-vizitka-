@@ -15,6 +15,9 @@
 
 <body>
 
+    <!-- Вставка кнопки назад -->
+    <button id="history-button">Назад</button>
+
   <section class="promo">
     <div class="container">
       <div class="logo">
@@ -147,6 +150,13 @@
       <p>Позвоните нам 8-800-555-01-21</p>
     </div>
   </footer>
+
+  <!-- Вставка кнопки назад -->
+<script>
+  document.getElementById('history-button').addEventListener('click', () => {
+    history.back();
+  });
+</script>
 
 <!-- <header></header>
 <nav></nav>

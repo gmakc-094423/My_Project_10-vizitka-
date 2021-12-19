@@ -40,6 +40,10 @@
 
 </head>
 <body>
+
+  <!-- Вставка кнопки назад -->
+  <button id="history-button">Назад</button>
+
 	<header id="header_header">
 		<nav>		
 		<img src="images/loopa.jpg" alt="Логотип" id="logo_image">
@@ -406,7 +410,12 @@
 <script src="JQuery/jquery.waypoints.min.js"></script>
 <script src="JQuery/myjquery.js"></script>
 
-
+<!-- Вставка кнопки назад -->
+<script>
+  document.getElementById('history-button').addEventListener('click', () => {
+    history.back();
+  });
+</script>
 
 </body>
 </html>

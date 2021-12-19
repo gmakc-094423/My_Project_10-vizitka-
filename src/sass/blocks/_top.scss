@@ -1,8 +1,11 @@
 .top {
-  min-height: 400px;
-  // background-color: $main_color;
-  background: linear-gradient(180deg, #424240 0%, #9F9BCE 100%);
+  height: 100%;
+  background: linear-gradient(180deg, #424240 0%, $back-color 100%);
   text-align: center;
+  padding-bottom: 50px;
+  &__title {
+    padding-top: 0;
+  }
   &__image {
     padding-top: 50px;
     img {

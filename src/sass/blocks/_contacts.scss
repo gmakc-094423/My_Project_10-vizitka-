@@ -1,0 +1,49 @@
+.contacts {
+  height: min-content;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  background: linear-gradient(180deg, #d6dcff 0%, #80ffff 100%);
+
+  &__list {
+    padding-left: 0px;
+    width: 95%;
+    max-width: 500px;
+    margin: 10px auto 0 auto;
+
+    & li {
+
+      vertical-align: middle;
+      padding: 0 0;
+    }
+
+    & li:first-child {
+      width: 70px;
+      height: 50px;
+    }
+    & li:nth-child(2) {
+      width: 25px;
+      height: 25px;
+    }
+
+    &-item, p {
+      list-style-type: none;
+      font: 400 14pt Roboto;
+      display: inline-block;
+
+      & p {
+
+        margin-top: 14px;
+      }
+      & img {
+        width: 25px;
+        height: 25px;
+      }
+    }
+    & a {
+      list-style-type: none;
+      font: 400 14pt Roboto;
+      display: inline;
+
+    }
+  }
+}

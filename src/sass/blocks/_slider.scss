@@ -1,0 +1,19 @@
+@media(max-width: 768px) {
+.slider {
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: auto;
+  align-items: start;
+  scroll-snap-type: x mandatory;
+}
+
+.slider_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 100%;
+  flex-wrap: wrap-reverse;
+  scroll-snap-align: start;
+  align-items: flex-end;
+}
+}

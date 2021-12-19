@@ -614,4 +614,17 @@ footer p {
 }
 
 
-
+#history-button {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border:burlywood 1px 50%;
+  position: fixed;
+  background-color: rgb(255, 0, 0);
+  right: 20px;
+  bottom: 20px;
+  color:rgb(235, 248, 58);
+  text-transform: uppercase;
+  font-weight: bold;
+  z-index: 100;
+}
