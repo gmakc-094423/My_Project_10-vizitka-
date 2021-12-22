@@ -1,10 +1,10 @@
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .portfolio__content {
     color: $text_color;
     }
 }
 
-@media (min-width: 699px) {
+@media screen and (min-width: 699px) {
   .portfolio__content_table {
     margin-left: 3%;
   }
@@ -20,7 +20,7 @@
   }
 }
 
-@media(min-width: 1024px) { 
+@media screen and (min-width: 1024px) { 
 
   header {
     position: fixed;
@@ -75,6 +75,14 @@
     padding-bottom: 50px;
     &__content {
       display: flex;
+      align-items: flex-start;
+      &-text h3 {
+        margin-top: 0;
+      }
+      &_table {
+        margin: 0 auto;
+
+      }
     }
   }
 
@@ -83,13 +91,13 @@
 
 }
 
-@media(min-width: 1366px) {
-// ????
-}
+// @media(min-width: 1366px) {
+// // ????
+// }
 
-@media(min-width: 1920px) {
+// @media(min-width: 1920px) {
 
-}
+// }
 
 
 // уточнить!!!

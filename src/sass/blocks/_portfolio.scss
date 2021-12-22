@@ -13,6 +13,8 @@
       & p {
         text-align: justify;
         font: 400 15pt Roboto;
+        // mix-blend-mode: revert;
+        // -webkit-background-clip: text;
         & span {
           font: 700 17pt Roboto;
           color: rgb(208, 255, 0);
